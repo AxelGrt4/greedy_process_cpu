@@ -60,8 +60,8 @@ while(<FILE>){
                 label => "greedy_process",
                 value => $cpu,
                 uom => "%",
-                warning => $newPlugin->opts->warning,           # Ajoute sur le graphique, une ligne au seuil d'avertissement défini dans les arguments
-                critical => $newPlugin->opts->critical          # Ajoute sur le graphique, une ligne au seuil critique défini dans les arguments
+                warning => $newPlugin->opts->warning,           # Affiche le seuil d'avertissement sur Centreon
+                critical => $newPlugin->opts->critical          # Affiche le seuil critique sur Centreon
         );
 
 	# Récupération du code de retour en fonction du seuil d'utilisation du cpu
