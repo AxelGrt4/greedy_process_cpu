@@ -9,7 +9,7 @@
 
 use strict;                 # Rends la déclaration de variables obligatoire
 use warnings;               # Affiche les messages d'avertissements
-use Monitoring::Plugin;     # Module de plugin Centreon
+use Monitoring::Plugin;     # Classe plugin de monitoring
 
 # déclaration du nouveau plugin
 my $newPlugin = Monitoring::Plugin->new(
@@ -37,10 +37,8 @@ $newPlugin->add_arg(
 );
 
 
-
 # Récupérations des arguments dans la ligne de commande
 $newPlugin->getopts;
-
 
 
 # Logique du plugin - corps du programme
